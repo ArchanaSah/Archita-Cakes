@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us page</title>
+    <link rel="stylesheet" href="contact.css">
+    <body>
+        <div class="section">
+            <nav>
+                <a href="index.html"><img src="cake/bekar2.png"></a>
+                <div class="nav-links" id="navLinks">
+                   <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                 <ul>
+                     <li><a href="index.html">HOME</a></li>
+                     <li><a href="gallery.html">GALLERY</a></li>
+                     <li><a href="about.html">ABOUT</a></li>
+                     <li><a href="contact.html">CONTACT</a></li>
+                 </ul>   
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav> 
+        <div class="contact-wrap">
+            <div class="contact-in">
+                <h1>Contact Info</h1>
+                <h2>Phone</h2>
+                <p>142567</p>
+                <h2>Email</h2>
+                <p>architacakes@gmail.com</p>
+                <h2>Address</h2>
+                <p>Baguiati, Narayantala East,Kolkata</p>
+            </div>
+            <div class="contact-in">
+            <h1>Send a message</h1>
+           
+            <form>
+                <input type="text" placeholder="Full Name" class="contact-in-input">
+                <input type="text" placeholder="Email" class="contact-in-input"><br><br>
+               <textarea placeholder="Message" class="contact-in-textarea"></textarea><br>
+               <button class="button button1">Submit</button>
+            </form>
+            </div>
+        </div>
+        <script>
+            var navlinks =document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navlinks.style.right="-200px"
+            }
+        </script>
+    </body>

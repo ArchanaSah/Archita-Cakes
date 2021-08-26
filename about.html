@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/fd437cc305.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="about.css">
+</head>
+    <body>
+        
+         <div class="section">
+            <nav>
+                <a href="index.html"><img src="cake/bekar2.png"></a>
+                <div class="nav-links" id="navLinks">
+                   <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                 <ul>
+                     <li><a href="index.html">HOME</a></li>
+                     <li><a href="gallery.html">GALLERY</a></li>
+                     <li><a href="about.html">ABOUT</a></li>
+                     <li><a href="contact.html">CONTACT</a></li>
+                 </ul>   
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav> 
+         <div class="container">
+             <div class="content-section">
+                 <div class="title">
+                     <h1>About Us</h1>
+                 </div>
+                 <div class="content">
+                     <h3>Contrary to popular belief, Lorem Ipsum is not simply random text.</h3>
+                     <p>It has roots in a piece of classical Latin literature from 45 BC, 
+                         making it over 2000 years old. 
+                         Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
+                          The first line of Lorem Ipsum
+                          "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.3</p>
+                     
+                 </div>
+                 <div class="social">
+                     <a href=""><i class="fa fa-facebook"></i></a>
+                     <a href=""><i class="fa fa-instagram"></i></a> 
+                     <a href=""><i class="fa fa-envelope"></i></a> 
+                 </div>
+             </div>
+             <div class="img-section">
+                 <img src="cake/yay.jpg">
+             </div>
+         </div>
+         </div>
+         <!---javascript for toggle menu---->
+    <script>
+        var navlinks =document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navlinks.style.right="-200px"
+        }
+    </script>
+    </body>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>    
+    <div class="section">
+        <nav>
+            <a href="index.html"><img src="cake/bekar2.png"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+             <ul>
+                 <li><a href="index.html">HOME</a></li>
+                 <li><a href="gallery.html">GALLERY</a></li>
+                 <li><a href="about.html">ABOUT</a></li>
+                 <li><a href="">CONTACT</a></li>
+             </ul>   
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="thumbnail">
+                        <img src="cake/captainamerica.jpg">
+                        
+                    </div>
+                </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="thumbnail">
+                            <img src="cake/girl.jpg">
+                            
+                        </div>
+                    </div>
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="thumbnail">
+                            <img src="cake/log.jpeg">
+                        
+                        </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="thumbnail">
+                    <img src="cake/panda.jpg">
+
+                </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="thumbnail">
+                    <img src="cake/hearttopping.jpg">
+                    
+                </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="thumbnail">
+                    <img src="cake/pinktoy.jpg">
+                    
+                </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                    <img src="cake/chocolatecandel.jpg">
+                    
+                </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                    <img src="cake/oreocake.jpg">
+                   
+                </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="thumbnail">
+                    <img src="cake/ferrorrocher.jpg">
+                    
+                </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+
+
+    <!---javascript for toggle menu---->
+    <script>
+        var navlinks =document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navlinks.style.right="-200px"
+        }
+    </script>
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
